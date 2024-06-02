@@ -1,0 +1,87 @@
+=============================================================================================
+==============================================CSS============================================
+=============================================================================================
+
+1. Reset CSS (Boilerplate)
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }    
+    html,body {
+        width: 100%;
+        height: 100%;
+    }
+    ol,ul {
+        list-style: none;
+    }
+------------------------------
+2. Selectors
+   - Tag (h1{})
+   - Id (#id{})
+   - Class (.class{})
+   - .class1 .class2 - Selects all elements with class2 that is a descendant of an element with class1
+   - p.intro - Selects all <p> elements with class="intro"
+   - div p - Selects all <p> elements inside <div> elements
+   - div > p - Selects all <p> elements where the parent is a <div> element
+   - reference - https://www.w3schools.com/cssref/css_selectors.php
+------------------------------
+3. Margin
+   - creates space outside the element
+   - margin: 20px; - clockwise direction
+   - margin: 10px 20px; - marign top~bottom 10px and left~right 20px
+------------------------------
+4. Padding
+   - creates space inside the element
+------------------------------
+5. Position
+   - Fixed - used for fixed header or footer, when using it we have to set a width property for it (100%) and the place it has to be fixed top:0 or bottom:0 based on header or footer.
+   - Absolute - with this element will be in space or higher from x-axis in a new layer where it is free and movable
+   - Relative - we give this property to parent element. After that we can give position absolute to any child elements in it. What this does is prevent its child element to go beyond its boundary. i.e since we give position absolute child element will be in free space so it can go beyond the boundaries of the parent to prevent this and make child move only within parents boundary as normally it does we use position relative.
+[if we want to place a element inside other element make the parent relative and child we wanna place as absolute]
+   - we use top, left, right, bottom property to move elements with position flex; to directly move to end of the boundary of the parent u can use "0" as value for top,left,right,bottom.
+   - with positon relative on parent element, we can use top, left etc in it to move the parent element with respect to the viewport here viewport will become parent and our parent element will be a child to it.
+------------------------------
+6. Flex (Display)
+   - It is used to align elements inside a parent in a single line or vertically with respect to the parent, from its default property (stacking one after another).
+   - give display flex property for the parent element.
+   - when use flex we get 2 properties width and height for the parent.
+   - to work on width use property - justify-content.
+   - to work on height use property -  align-items.
+   - flex-wrap - this parent property specifies whether the flexible child items should wrap or not. when use this give width full to childs so that when parent holds more child in it in a row we can break or wrap some of the childs in to next row. (mainly use for mobile responsive cases).
+   - we can use height and width property for child elements to specify the required space it can take within the parent.
+   - we can use align-self property to individually align one of the items (child) inside a flexible element (parent) 
+------------------------------
+7. Grid (Display)
+   - Similar usecase as flex.
+   - grid layout enables an author to align elements into columns and rows.
+   - if have 3 elements inside a parent we can use grid property in parent to align them within it. we can divide parent element to columns and each child elements will take each column; we can adjust the no.of cols and col space an element taken. 
+   - grid-cols-no.of-col - tailwind class to break display to cols.
+   - col-span-[value] - tailwind class used for the child element, to specify how many cols it take out of total cols.
+   - we can use gap property to specify  space b/w cols.
+   - if we specify no.of cols < no.of childs the excess child will move to the next line and occupy its specified col space.   
+------------------------------
+8. Overflow (Scrolling)
+The overflow property specifies what should happen if content overflows an element's box.
+   - overflow: scroll;
+   - overflow: hidden;
+   - reference - https://www.w3schools.com/cssref/pr_pos_overflow.php
+------------------------------
+9. Min & Max Height | Width
+   - max-height - The max-height property defines the maximum height of an element.
+If the content is larger than the maximum height, it will overflow.
+   - min-height - The min-height property defines the minimum height of an element. If the content is smaller than the minimum height, the minimum height will be applied. If the content is larger than the minimum height, the min-height property has no effect.  
+   - max-width - The max-width property defines the maximum width of an element. If the content is larger than the maximum width, it will automatically change the height of the element.
+   - min-width - The min-width property defines the minimum width of an element. If the content is smaller than the minimum width, the minimum width will be applied. If the content is larger than the minimum width, the min-width property has no effect.
+------------------------------
+8. Viewport height is 100 - vh100
+------------------------------
+9. CSS Container Styling
+   .container {
+       width: less than 100%;
+       margin: 0 auto; to center elements inside // m-auto in tailwind
+   }
+------------------------------
+------------------------------
+CSS Reference - https://www.w3schools.com/cssref/index.php
+

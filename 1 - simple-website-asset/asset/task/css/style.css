@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a{
+    color: #8B8BA5;
+} 
+
+body {
+	font-family: "Quicksand", sans-serif;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 130px;
+}
+
+header .wrapper h1 {
+	width: 30%;
+}
+
+header .wrapper h1 img {
+	width: 150px;
+}
+
+header .wrapper ul {
+	display: flex;
+	justify-content: end;
+}
+
+header .wrapper ul li {
+	margin-right: 35px ;
+}
+
+header .wrapper ul li a {
+	font-size: 17px;
+	font-weight: 300;
+}
+
+header .wrapper ul li:first-child a {
+	font-weight: 600;
+	color: #272042;
+
+}
+
+header .wrapper ul li:last-child a {
+	font-weight: 700;
+	color: #272042;
+	background-color: #FBE0DC;
+	padding: 12px 25px;
+	border-radius: 30px 30px 15px 15px;
+}
+
+#main {
+	padding: 40px 0;
+}
+
+#main .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#main .wrapper div.left {
+	width: 48%;
+	align-items: center;
+	padding: 40px;
+}
+
+#main .wrapper div.left h1,span {
+	font-size: 50px;
+	font-weight: 700;
+	color: #272042;
+	margin-bottom: 18px;
+}
+
+#main .wrapper div.left h1 span {
+	text-decoration: underline 6px #FBE0DC;
+}
+
+#main .wrapper div.left p {
+	font-size: 22px;
+	font-weight: 400;
+	color: #8B8BA5;
+	margin-bottom: 50px;
+	line-height: 30px;
+}
+
+#main .wrapper div.left a {
+	font-size: 18px;
+	font-weight: 600;
+	color: #272042;
+	background-color: #F7C531;
+	padding: 12px 35px;
+	border-radius: 30px 30px 15px 15px;
+}
+
+#main .wrapper div.right {
+	width: 48%;
+	align-items: center;
+}
+
+#main .wrapper div.right img {
+	width: 95%;
+	padding: 20px;
+}
